@@ -16,6 +16,7 @@ classifier = Classifier("Model/keras_model.h5", "Model/labels.txt")
 
 labels = ["А", "Б", "В", "Г", "Д", "Е", "Є", "Ж", "З", "И", "І", "Й", "К", "Л", "М", "Н", "О", "П", "Р", "С", "Т", "У", "Ф", "Х", "Ц", "Ч", "Ш", "Ь", "Ю", "Я"]
 
+
 @app.route('/process_image', methods=['POST'])
 def process_image():
     if 'file' not in request.files:
